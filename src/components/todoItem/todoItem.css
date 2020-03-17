@@ -1,0 +1,50 @@
+.flex-container {
+    display: flex;
+}
+.todo-item {
+    margin: 10px;
+}
+.box {
+    height: 14px;
+    width: 14px;
+    border-radius: 50px;
+    background-color: red;
+}
+.remove-button {
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    outline: none;
+}
+.remove-button:hover {
+    background-color: #4f67f1;
+    color: white;
+}
+.container {
+    border: solid 1px grey;
+    flex-grow: 1;
+    align-items: center;
+    cursor: pointer;
+}
+.check-text-item {
+    pointer-events: none;
+}
+.check-box {
+    display: inline-block;
+    margin: 5px;
+    align-self: center;
+}
+.todo-text {
+    margin: 5px;
+}
+.todo-text.completed {
+    color: grey;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.container:hover {
+    border: solid 1px yellowgreen;
+}
+.container:hover .box {
+    background-color: yellow;
+}
